@@ -1,7 +1,6 @@
 %define		_name	fuseiso
-
 Summary:	FUSE module to mount ISO filesystem images
-Summary(pl):	Modu³ FUSE pozwalaj±cy montowaæ obrazy ISO
+Summary(pl.UTF-8):	ModuÅ‚ FUSE pozwalajÄ…cy montowaÄ‡ obrazy ISO
 Name:		fuse-iso
 Version:	20061017
 Release:	1
@@ -10,7 +9,7 @@ Group:		Applications/System
 Source0:	http://ubiz.ru/dm/%{_name}-%{version}.tar.bz2
 # Source0-md5:	eed65f7f73f1d7b4291e1d49ee237bb0
 URL:		http://fuse.sourceforge.net/wiki/index.php/FuseIso
-BuildRequires:	glib2-devel >= 2.2
+BuildRequires:	glib2-devel >= 1:2.2
 BuildRequires:	libfuse-devel >= 2.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Patch0:		%{name}.patch
@@ -18,8 +17,8 @@ Patch0:		%{name}.patch
 %description
 FUSE module to mount ISO filesystem images
 
-%description -l pl
-Modu³ FUSE pozwalaj±cy montowaæ obrazy ISO
+%description -l pl.UTF-8
+ModuÅ‚ FUSE pozwalajÄ…cy montowaÄ‡ obrazy ISO
 
 %prep
 %setup -q -n %{_name}-%{version}
