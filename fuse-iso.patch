@@ -1,0 +1,11 @@
+--- fuseiso-20061017/src/fuseiso.c	2006-10-17 04:07:42.000000000 +0200
++++ fuseiso-20061017/src/fuseiso.c	2007-01-25 20:57:57.000000000 +0100
+@@ -29,7 +29,7 @@
+ #include <fcntl.h>
+ #include <errno.h>
+ #include <unistd.h>
+-#include <linux/stat.h>
++#include <sys/stat.h>
+ #include <unistd.h>
+ #include <getopt.h>
+ #include <mntent.h>
