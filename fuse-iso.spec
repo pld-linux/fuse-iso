@@ -8,17 +8,17 @@ License:	GPL
 Group:		Applications/System
 Source0:	http://ubiz.ru/dm/%{_name}-%{version}.tar.bz2
 # Source0-md5:	eed65f7f73f1d7b4291e1d49ee237bb0
+Patch0:		%{name}.patch
 URL:		http://fuse.sourceforge.net/wiki/index.php/FuseIso
 BuildRequires:	glib2-devel >= 1:2.2
 BuildRequires:	libfuse-devel >= 2.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Patch0:		%{name}.patch
 
 %description
-FUSE module to mount ISO filesystem images
+FUSE module to mount ISO filesystem images.
 
 %description -l pl.UTF-8
-Moduł FUSE pozwalający montować obrazy ISO
+Moduł FUSE pozwalający montować obrazy ISO.
 
 %prep
 %setup -q -n %{_name}-%{version}
