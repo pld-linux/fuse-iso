@@ -12,6 +12,7 @@ Patch0:		%{name}.patch
 URL:		http://fuse.sourceforge.net/wiki/index.php/FuseIso
 BuildRequires:	glib2-devel >= 1:2.2
 BuildRequires:	libfuse-devel >= 2.2
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
