@@ -2,7 +2,7 @@ Summary:	FUSE module to mount ISO filesystem images
 Summary(pl.UTF-8):	Moduł FUSE pozwalający montować obrazy ISO
 Name:		fuse-iso
 Version:	20070708
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/System
 Source0:	http://ubiz.ru/dm/fuseiso-%{version}.tar.bz2
