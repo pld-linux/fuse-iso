@@ -9,6 +9,7 @@ Source0:	http://ubiz.ru/dm/fuseiso-%{version}.tar.bz2
 # Source0-md5:	4bb50412b6d01f337565e28afddca3a5
 Patch0:		%{name}.patch
 URL:		http://fuse.sourceforge.net/wiki/index.php/FuseIso
+BuildRequires:	automake
 BuildRequires:	glib2-devel >= 1:2.2
 BuildRequires:	libfuse-devel >= 2.2
 BuildRequires:	pkgconfig
@@ -25,6 +26,7 @@ Moduł FUSE pozwalający montować obrazy ISO.
 %patch0 -p1
 
 %build
+cp -f /usr/share/automake/config.sub .
 %configure
 
 %{__make}
