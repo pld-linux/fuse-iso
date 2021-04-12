@@ -1,0 +1,11 @@
+--- fuseiso-20070708/src/fuseiso.c.orig	2021-04-12 18:00:05.513973615 +0200
++++ fuseiso-20070708/src/fuseiso.c	2021-04-12 18:00:48.777114350 +0200
+@@ -309,7 +309,7 @@
+     maintain_mtab = 1;
+     iocharset = NULL;
+     
+-    char c;
++    signed char c;
+     while((c = getopt(argc, argv, "+npc:h")) > 0) {
+         switch(c) {
+             case 'n':
